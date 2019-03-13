@@ -1,31 +1,31 @@
-DROP DATABASE IF EXISTS movieFinal;
-CREATE DATABASE movieFinal;
+DROP DATABASE IF EXISTS moviefinal;
+CREATE DATABASE moviefinal;
 
-\c
+\c moviefinal;
 
-CREATE TABLE genres {
+CREATE TABLE genres (
 id SERIAL PRIMARY KEY,
 name VARCHAR NOT NULL
-};
+);
 
-CREATE TABLE movies {
+CREATE TABLE movies (
   id SERIAL PRIMARY KEY,
   title VARCHAR NOT NULL,
   genre_id INT NOT NULL REFERENCES genres(id),
   img_url VARCHAR
-};
+);
 
-CREATE TABLE ratings {
+CREATE TABLE ratings (
   id SERIAL PRIMARY KEY,
   stars INT NOT NULL CHECK (stars between 1 and 5),
   movie_id INT NOT NULL REFERENCES movies(id)
-};
+);
 
-CREATE TABLE comments {
+CREATE TABLE comments (
   id SERIAL PRIMARY KEY,
   body TEXT,
   movie_id INT NOT NULL REFERENCES movies(id)
-};
+);
 
 INSERT INTO genres(name) VALUES
 ('drama'),
