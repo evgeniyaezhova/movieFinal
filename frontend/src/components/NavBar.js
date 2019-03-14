@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-// import './css/NavBar.css';
+import './css/NavBar.css';
 
 
 class NavBar extends React.Component {
@@ -12,13 +12,13 @@ class NavBar extends React.Component {
       <div className="nvbr">
       <nav className="navbar">
       <li>
-      <Link to="/">Home</Link>
+      <Link to="/" className="link">Home</Link>
       </li>
       <li>
-      <Link to="/movies">All Movies</Link>
+      <Link to="/movies" className="link">All Movies</Link>
       </li>
       <li >
-      <Link to="/movies/byGenre">By Genre</Link>
+      <Link to="/movies/byGenre" className="link">By Genre</Link>
       </li>
       </nav>
       </div>

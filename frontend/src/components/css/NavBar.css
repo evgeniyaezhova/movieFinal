@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi|Permanent+Marker|Prompt');
+
+.navbar {
+  text-align: center;
+  font-family: 'Baloo Thambi', sans-serif;
+  font-size: 25px;
+  text-decoration-color: white;
+  background-color: darkblue;
+  height: 75px;
+  vertical-align: middle;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navbar li {
+  list-style: none;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.link {
+  color: white;
+}

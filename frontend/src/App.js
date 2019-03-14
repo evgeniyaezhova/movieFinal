@@ -1,5 +1,5 @@
 import React from 'react';
-// import './App.css';
+import './App.css';
 // import HomeContainer from "./components/HomeContainer";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -11,7 +11,9 @@ class App extends React.Component {
     return (
       <div>
       <NavBar />
-      <h1>WELCOME TO MY MOVIE APP</h1>
+      <div className="homePage">
+      <h1 className="welcome">WELCOME TO MY MOVIE APP</h1>
+      </div>
 
       </div>
     );
