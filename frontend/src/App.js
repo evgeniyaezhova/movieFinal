@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-// import HomeContainer from "./components/HomeContainer";
+import MovieContainer from "./components/MovieContainer";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Home from "./components/Home"
 
 
 class App extends React.Component {
@@ -11,9 +12,10 @@ class App extends React.Component {
     return (
       <div>
       <NavBar />
-      <div className="homePage">
-      <h1 className="welcome">WELCOME TO MY MOVIE APP</h1>
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/movies" component={MovieContainer} />
+      </Switch>
 
       </div>
     );
@@ -21,9 +23,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-
-// <Switch>
-// <Route exact path="/" component={HomeContainer} />
-// </Switch>

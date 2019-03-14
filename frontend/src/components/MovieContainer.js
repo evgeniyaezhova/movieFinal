@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
-import App from "./App";
-import { fetchAllMovies } from "./actions/actionMovies";
-// import './css/Home.css'
+import { Movies } from "./Movies";
+import { fetchAllMovies } from "../actions/actionMovies";
 
 const mapStateToProps = state => {
 
@@ -20,4 +19,4 @@ const mapDispatchToProps = dispatch => {
 export default connect (
   mapStateToProps,
   mapDispatchToProps
-) (App);
+) (Movies);

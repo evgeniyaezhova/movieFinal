@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const fetchAllMovies = () => {
-  return axios.get("/api/movies")
+  return axios.get(`/api/movies`)
 };
 
 export const fetchSingleMovie = (id) => {
