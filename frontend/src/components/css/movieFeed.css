@@ -1,0 +1,65 @@
+#movieImg {
+  width: 436px;
+  height: auto;
+  display: flex;
+  border: 0;
+  margin: 0px 12px 28px 12px;
+  cursor: zoom-in;
+}
+
+.movieGrandPa {
+  background-color: black
+}
+
+.movie-parent {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+/* .movielist {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1000px;
+  line-height: 0;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 0px;
+   -moz-column-count: 2;
+   -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+} */
+
+.movieTitle {
+  display: flex;
+  height: 50px;
+  width: auto;
+  font-family: Helvetica;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 30px;
+
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1000px;
+  line-height: 0;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 0px;
+   -moz-column-count: 2;
+   -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+}

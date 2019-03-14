@@ -1,0 +1,25 @@
+.singleMovieParent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: black; */
+  padding-bottom: 400px;
+}
+
+.singleMovieDisplay {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.singleMovieImage {
+  display: block
+}
+
+#singleMovieImg {
+max-width: 472px;
+height: auto;
+border: 0;
+border-radius: 2px;
+margin: 40px 12px 12px 22px;
+}

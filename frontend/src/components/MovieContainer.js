@@ -2,11 +2,10 @@ import { connect } from "react-redux";
 import { Movies } from "./Movies";
 import { fetchAllMovies } from "../actions/actionMovies";
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
 
   return {
-    movies: Object.values(state.movies),
-    ...ownProps
+    movies: Object.values(state.movies)
   };
 };
 
